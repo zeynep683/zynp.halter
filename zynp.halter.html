@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeynep Usul - Halter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #005f99;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ddd;
+    }
+    nav button {
+      background: none;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #ccc;
+    }
+    .content {
+      padding: 20px;
+      display: none;
+    }
+    .content.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #eee;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Halter - Zeynep Usul</h1>
+  </header>
+  <nav>
+    <button onclick="showPage('anasayfa')">Anasayfa</button>
+    <button onclick="showPage('blog')">Blog</button>
+    <button onclick="showPage('hakkimizda')">Hakkımızda</button>
+    <button onclick="showPage('iletisim')">İletişim</button>
+    <button onclick="showPage('referanslar')">Referanslarımız</button>
+  </nav>
+
+  <div id="anasayfa" class="content active">
+    <h2>Halter Nedir?</h2>
+    <p>Halter, belirli tekniklerle ağırlık kaldırmaya dayalı bir spor dalıdır. Sporcular, koparma (snatch) ve silme-silkme (clean and jerk) adı verilen iki ana hareketle, yerden alınan halterleri baş üstüne kaldırarak en yüksek ağırlığı başarıyla tamamlamaya çalışır. Hem güç hem de teknik gerektiren olimpik bir branştır.</p>
+    <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="Halter yapan sporcu">
+  </div>
+
+  <div id="blog" class="content">
+    <h2>Tarihte Halter</h2>
+    <p>Halter sporu, insanlık tarihi boyunca güç gösterisi olarak farklı şekillerde yapılmıştır. Antik Mısır, Çin ve Yunan dönemlerinde insanlar taş, kum torbası veya metal objelerle güçlerini sergilerdi. Modern anlamda halter, 19. yüzyılın sonlarında Avrupa’da kurallı bir spor haline geldi.</p>
+    <img src="https://images.pexels.com/photos/1189166/pexels-photo-1189166.jpeg" alt="Halter tarihi">
+
+    <h3>Halterin Faydaları</h3>
+    <ul>
+      <li>Kas gücü ve dayanıklılığı artırır</li>
+      <li>Koordinasyon ve dengeyi geliştirir</li>
+      <li>Mental dayanıklılığı güçlendirir</li>
+      <li>Sporcu disiplini ve öz güven kazandırır</li>
+    </ul>
+    <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" alt="Halter yapan kadın sporcu">
+
+    <h3>Haltere Kimler Başlayabilir?</h3>
+    <ul>
+      <li>10 yaş ve üzeri herkes kontrollü olarak başlayabilir</li>
+      <li>Kadınlar için uygun ve güçlü bir spor dalıdır</li>
+      <li>Başlangıçta doğru teknik eğitimi çok önemlidir</li>
+    </ul>
+
+    <h3>Halterde Beslenme ve Dinlenme</h3>
+    <ul>
+      <li>Yeterli protein ve karbonhidrat dengesi gerekir</li>
+      <li>Uyku, toparlanma süreci için kritik önemdedir</li>
+      <li>Aşırı antrenman sakatlanma riskini artırır</li>
+    </ul>
+  </div>
+
+  <div id="hakkimizda" class="content">
+    <h2>Hakkımızda</h2>
+    <p>Biz, haltere gönül vermiş antrenör adaylarıyız. Spor bilimleri eğitimi alan bireyler olarak, bu branşı tanıtmak ve yaygınlaştırmak istiyoruz.</p>
+    <p>Web sitesi: <a href="https://zuhalterfit.com/launch">zuhalterfit.com</a></p>
+    <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg" alt="Halter takımı">
+  </div>
+
+  <div id="iletisim" class="content">
+    <h2>İletişim</h2>
+    <p><strong>Email:</strong> <a href="mailto:zynp.hltr01@gmail.com">zynp.hltr01@gmail.com</a></p>
+    <p><strong>Adres:</strong> Balcalı, Çukurova Üniversitesi Spor Bilimleri Fakültesi, Sarıçam / Adana</p>
+    <img src="https://images.pexels.com/photos/3861481/pexels-photo-3861481.jpeg" alt="İletişim">
+  </div>
+
+  <div id="referanslar" class="content">
+    <h2>Referanslarımız</h2>
+    <ul>
+      <li><a href="https://zuhalterfit.com/referanslar">https://zuhalterfit.com/referanslar</a></li>
+      <li><a href="https://zuhalterfit.com/ref">https://zuhalterfit.com/ref</a></li>
+    </ul>
+    <img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg" alt="Halter yarışması görseli">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zeynep Usul - Halter Web Tasarımı</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(div => div.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
